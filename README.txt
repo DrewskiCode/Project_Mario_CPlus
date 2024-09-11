@@ -18,7 +18,7 @@ When I run the program in the terminal I get zsh: bus error
 When I run the progrma in Docker, I get a segmentation fault or error with Mario interacting with the boss
 Running on the server I found a segmentation fault in getCell but unsure how to solve it
 
-September 21st: Ive narrowed down the problem to the calling of the functions getCell and toString in the Simulator loop
+September 21st 2023: Ive narrowed down the problem to the calling of the functions getCell and toString in the Simulator loop
 I dont beleive its an out of bounds error because I print out what does into the function before it goes in
 
-September 22nd: The problem was in the currLevel variable and created a segmentation fault right before mario won the game, the currLevel increased and was accessed by the getCell command before the game ended
+September 22nd 2023: The problem was in the currLevel variable and created a segmentation fault right before mario won the game, the currLevel increased and was accessed by the getCell command before the game ended
